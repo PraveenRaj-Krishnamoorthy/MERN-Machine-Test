@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: teal;
+}
+
+.login-container {
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+}
+
+nav ul {
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: x-larger;
+}
+
+nav ul li {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+  }
+
+  span {
+    font-size: x-large;
+    border: 1px solid greenyellow;
+    font-size: xx-large;
+  }
+
+  button {
+    padding: 10px;
+    transition: 0.2s;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: deeppink;
+    color: white;
+    font-size: large;
+  }
+
+  button:hover {
+    background-color: red;
+    scale: 1.1;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+}
+
+
+
+.create form {
+  width: 600px;
+  height: 500px;
+  /* border: 2px solid; */
+  padding: 1%;
+  display: grid;
+  place-items: center;
+  background-color: silver;
+  box-shadow: 2px 4px 6px black;
+  margin: 50px auto;
+  background-color: lightgray;
+
+
+  table {
+    background: transparent;
+    backdrop-filter: blur(500px);
+    width: 90%;
+    height: 100%;
+
+    button {
+      width: 60%;
+      height: 80%;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 600;
+      background: linear-gradient(lightgreen, forestgreen);
+      transition: 0.2s;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      transition: 0.2s;
+      border-radius: 0;
+      background: linear-gradient(greenyellow, lightgreen);
+      scale: 1.05;
+    }
+
+    tbody {
+      font-size: larger;
+
+      tr {
+        .label {
+          width: 40%;
+        }
+
+        td {
+
+          input[type="text"],
+          input[type="email"],
+          input[type="number"] {
+            width: 100%;
+            height: 70%;
+            font-size: large;
+          }
+
+          select {
+            transform: scale(1.4);
+
+            option {
+              padding: 5%;
+            }
+          }
+
+          input[type="radio"] {
+            transform: scale(1.5);
+          }
+
+          input[type="checkbox"] {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.div {
+  width: 100%;
+  height: 666px;
+  overflow: auto;
+  background-color: cadetblue;
+}
+
+.data {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  font-size: x-large;
+  border: 2px solid;
+
+  a,
+  button {
+    padding: 5px;
+    height: 45px;
+    margin-top: 5px;
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: 0.2s;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    background-color: red;
+    scale: 1.1;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  p {
+    /* border: 2px solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    span{
+      font-size: x-large;
+    }
+  }
+
+  input[type="text"] {
+    position: absolute;
+    right: 0;
+    top: 73px;
+    width: 20%;
+    padding: 13px;
+    font-size: large;
+    border: none;
+  }
+  ::placeholder{
+    color:  black;
+  }
+}
